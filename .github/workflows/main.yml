@@ -12,8 +12,10 @@ variables:
   acrLoginServer: 'myRegistry.azurecr.io'
 
 
-jobs:
-  build:
+stages:
+- stage: BuildAndPush
+  jobs:
+   build:
 
     runs-on: ubuntu-latest
 
